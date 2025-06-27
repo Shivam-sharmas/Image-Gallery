@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <header>
+    <h1 style="background: rgb(67, 26, 114); ">☀️Gallery☀️</h1>
+    <div class="filters">
+      <button onclick="filterImages('all')"  >All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('city')">City</button>
+      <button onclick="filterImages('people')">People</button>
+      <button id="mode-toggle" style="border-radius: 10000px;" onclick="toggleMode()">🌙Mode </button>
+  
+    </div>
+  </header>
+
+
+<body>
+
+    <h2>Image Gallery</h2>
+    <div class="full-img " id="fullImgBox">
+        <img src="./Images/1.png.jpg" id="fullImg" alt="">
+        <span id="close" onclick="closeFullImg()">X</span>
+    </div>
+    <div class="container">
+        <img src="./1.png.jpg" alt="" onclick="OpenImg(this.src)" id="galleryImg">
+        <img src="./2.png.jpg" alt="" onclick="OpenImg(this.src)" id="galleryImg">
+        <img src="./12.png.jpg"alt=""onclick="OpenImg(this.src)" id="galleryImg">
+        <img src="./4.png.jpg" alt="" onclick="OpenImg(this.src)" id="galleryImg">
+        <img src="./5.png.jpg" alt="" onclick="OpenImg(this.src)" id="galleryImg">
+        <img src="./6.png.jpg" alt="" onclick="OpenImg(this.src)" id="galleryImg">
+        <img src="./8.png.jpg" alt="" onclick="OpenImg(this.src)" id="galleryImg">
+        <img src="./9.png.jpg" alt="" onclick="OpenImg(this.src)" id="galleryImg">
+    </div>
+    <header>
+        <div class="header-content">
+          <h1>Shivam's Image Gallery</h1>
+      
+      <!-- At the end of body -->
+      <footer>
+        <p>&copy; 2025 Shivam. All rights reserved.</p>
+      </footer>
+      
+
+    <script src="script.js"></script>
+</body>
+
+</html>
